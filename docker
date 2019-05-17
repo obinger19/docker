@@ -12,13 +12,12 @@ touch index.html
 <!DOCTYPE html>
 <html>
 <head>
-<title>Ez egy oldal</title>
-<meta charset="UTF-8">
+
 </head>
 <body>
       
-<h1>Hello World!</h1>
-<p>ppp</p>
+<h1><font color="red">Vizsga 2019 május</font></h1>
+
       
 </body>
 </html>
