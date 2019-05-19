@@ -1,13 +1,13 @@
-sudo -s
+
 sudo apt-get update
 sudo apt-get install docker.io -y
-docker run -p 80:80 -d nginx
-touch Dockerfile 
+sudo docker run -p 80:80 -d nginx
+sudo touch Dockerfile 
         → Lépj bele(mc) és másold be ezt!:
 FROM nginx:alpine
 COPY . /usr/share/nginx/html
 ----------------------------------
-touch index.html 
+sudo touch index.html 
         → lépj bele és másold be ezt!:
 <!DOCTYPE html>
 <html>
@@ -23,10 +23,10 @@ touch index.html
 </html>
 ----------------------------------
 cd
-docker ps
-docker stop „ide azt írd, ami a 80→80/tcp után áll!”
-docker container prune    → yes!
-docker images webserver-image:v1
-docker build -t ng .
-docker run -d -p 80:80 --name sajatnev(webszerver) ng
+sudo docker ps
+sudo docker stop „ide azt írd, ami a 80→80/tcp után áll!”
+sudo docker container prune    → yes!
+sudo docker images webserver-image:v1
+sudo docker build -t ng .
+sudo docker run -d -p 80:80 --name sajatnev(webszerver) ng
 DOCKER IP MEGÁLLAPÍTÁSA: nmap 172.17.0.0/24
